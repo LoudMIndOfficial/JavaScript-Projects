@@ -96,7 +96,7 @@ function checkWinConditions() {
         const b = selectedSquares.includes(squareB);
         const c = selectedSquares.includes(squareC);
 
-        if (a === true && b === true && c === true) {return true;}
+        if (a === true && b === true && c === true) { return true; }
     }
 }
 
@@ -111,7 +111,9 @@ function audio(audioURL) {
 }
 
 function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
-    const canvas = document.getContext('2d');
+    
+    const canvas = document.getElementById('win-lines');
+    const c = canvas.getContext('2d');
     let x1 = coordX1,
 
         y1 = coordY1,
@@ -148,7 +150,7 @@ function animateLineDrawing() {
         if (x >= x2 && y >=y2) { cancelAnimationFrame(animationLoop); }
     }
 
-    if (x1 <= x2 && y1 <= y2) {
+    if (x1 <= x2 && y1 >= y2) {
         if (x < x2) { x += 10; }
         if (y > y2) { y -= 10; }
         if (x >= x2 && y <=y2) { cancelAnimationFrame(animationLoop); }
@@ -169,6 +171,7 @@ setTimeout(function () { clear(); resetGame(); }, 1000);
 function resetGame () {
     for (let i = 0; 1 < 9; i++) {
         let square = document.getElementById(String(i));
+        square.style.backgroundImage = '';
     }
 
     selectedSquares = [];
