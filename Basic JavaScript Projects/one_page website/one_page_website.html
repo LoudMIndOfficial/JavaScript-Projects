@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/one_page_website.css">
+    <script src="js/one_page_website.js"></script>
+    <title>Jeep's Unlimited</title>
+
+
+</head>
+    <body>
+        <!-- nav start -->
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#video">VIDEO</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- nav end -->
+        
+        <!-- header -->
+        <h1 style="text-align:center">Jeeps UNLIMITED</h1>
+        <!-- header end -->
+         
+        <!-- Cover image    -->
+        <div class="conatiner7">
+            <div>
+                <img src="./images/Coverimage1.png" alt="">
+            </div>
+        </div>
+        <!-- cover image end -->
+        
+        <!-- photo gallery -->
+
+        <h2 style="text-align:center">Photo Gallery</h2>
+    <div id="gallery">
+        <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <img src="images/Jeep_1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="images/Jeep_2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="images/Jeep_3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="images/Jeep_4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="images/Jeep_5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="images/Jeep_6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="images/Jeep_7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="images/Jeep_8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="images/Jeep_9.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+                    </div>
+                </div>
+            <br>
+            <br>
+
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <div class="numbered">1 / 10</div>
+                            <img src="images/Jeep_1.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbered">2 / 10</div>
+                            <img src="images/Jeep_2.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbered">3 / 10</div>
+                            <img src="images/Jeep_3.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbered">4 / 10</div>
+                            <img src="images/Jeep_4.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbered">5 / 10</div>
+                            <img src="images/Jeep_5.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbered">6 / 10</div>
+                            <img src="images/Jeep_6.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbered">7 / 10</div>
+                            <img src="images/Jeep_7.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbered">8 / 10</div>
+                            <img src="images/Jeep_8.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbered">9 / 10</div>
+                            <img src="images/Jeep_9.jpg" style="width:100%">
+                        </div>
+
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+
+                        <div class="column">
+                            <img class="demo cursor" src="images/Jeep_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Jeep 1">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/Jeep_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Jeep 2">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/Jeep_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Jeep 3">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/Jeep_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Jeep 4">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo cursor" src="images/Jeep_5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Jeep 5">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/Jeep_6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Jeep 6">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/Jeep_7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Jeep 7">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/Jeep_8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Jeep 8">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/Jeep_9.jpg" style="width:100%" onclick="currentSlide(9)" alt="Jeep 9">
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+
+        <!-- End photo gallery -->
+
+        <!-- CONTACT US -->
+            <div id="contact">
+                <div class="container1">
+                    <form action="action_page.php">
+
+                        <label for="fname">First Name</label>
+                        <input type="text"id="fname" name="firstname" placeholder="Your First Name.." ><br>
+
+                        <label for="fname">Last Name</label>
+                        <input type="text"id="lname" name="lastname" placeholder="Your Last Name.." ><br>
+
+                        <label for="JeepOpinion">Do You Like Jeep Products?</label>
+                        <select id="jeep" name="Jeep">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                            <option value="No Opinion">No Opinion</option>
+                        </select>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+
+<br>
+    
+    <footer>
+        <div class="footer">
+        &copy; 2020 Jeeps Unlimited | Carlisle, PA
+        </div>
+    
+    </footer>
+    </html>
